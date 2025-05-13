@@ -1,98 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr"></html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gesture-Control Modélisation</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1, h2 { color: #333; }
-    img { max-width: 100%; height: auto; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px 0;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
-  <h1>Gesture-Control Modélisation</h1>
-  <p>Ce document présente la modélisation complète du projet Gesture-Control, incluant l'architecture, les diagrammes UML, et les flux de données.</p>
+  <header>
+    <h1>Gesture-Control Modélisation</h1>
+    <p>Ce document présente la modélisation complète du projet Gesture-Control, incluant l'architecture, les diagrammes UML, et les flux de données.</p>
+  </header>
 
-  <h2>Diagramme UML de cas d'utilisation</h2>
-  <p>Le diagramme suivant montre les interactions entre l'utilisateur et le système.</p>
-  <img src="useCaseDiagramme.svg" alt="Diagramme UML de cas d'utilisation">
+  <main>
+    <section>
+      <h2>Diagramme UML de cas d'utilisation</h2>
+      <p>Le diagramme suivant montre les interactions entre l'utilisateur et le système.</p>
+      <img src="useCaseDiagramme.svg" alt="Diagramme UML de cas d'utilisation">
+    </section>
 
-  <h2>Diagramme UML de classes</h2>
-  <p>Le diagramme suivant montre les classes principales, leurs attributs, méthodes, et relations.</p>
-  <img src="classeDiagramme.png" alt="Diagramme UML de classes">
+    <section>
+      <h2>Diagramme UML de classes</h2>
+      <p>Le diagramme suivant montre les classes principales, leurs attributs, méthodes, et relations.</p>
+      <img src="classeDiagramme.png" alt="Diagramme UML de classes">
+    </section>
 
-  <h2>Diagramme UML de composants</h2>
-  <p>Le diagramme suivant montre les composants logiciels et leurs dépendances.</p>
-  <img src="composantsDiagramme.svg" alt="Diagramme UML de composants">
+    <section>
+      <h2>Diagramme UML de composants</h2>
+      <p>Le diagramme suivant montre les composants logiciels et leurs dépendances.</p>
+      <img src="composantsDiagramme.svg" alt="Diagramme UML de composants">
+    </section>
 
-  <h2>Diagramme UML de packages</h2>
-  <p>Le diagramme suivant organise les classes en packages et montre les dépendances.</p>
-  <img src="packageDiagramme.svg" alt="Diagramme UML de packages">
+    <section>
+      <h2>Diagramme UML de packages</h2>
+      <p>Le diagramme suivant organise les classes en packages et montre les dépendances.</p>
+      <img src="packageDiagramme.svg" alt="Diagramme UML de packages">
+    </section>
 
-  <h2>Diagramme UML de déploiement</h2>
-  <p>Le diagramme suivant décrit l'architecture physique du système.</p>
-  <img src="deploymentDiagramme.svg" alt="Diagramme UML de déploiement">
+    <section>
+      <h2>Diagramme UML de déploiement</h2>
+      <p>Le diagramme suivant décrit l'architecture physique du système.</p>
+      <img src="deploymentDiagramme.svg" alt="Diagramme UML de déploiement">
+    </section>
 
-  <h2>Diagramme UML d'état-transition</h2>
-  <p>Le diagramme suivant montre les états du système et les transitions.</p>
-  <img src="etatTransition.svg" alt="Diagramme UML d'état-transition">
+    <section>
+      <h2>Diagramme UML d'état-transition</h2>
+      <p>Le diagramme suivant montre les états du système et les transitions.</p>
+      <img src="etatTransition.svg" alt="Diagramme UML d'état-transition">
+    </section>
 
-  <h2>Diagramme UML d'activité : Reconnaissance des gestes</h2>
-  <p>Le diagramme suivant détaille le flux de travail pour reconnaître un geste (ex. SCROLL_UP).</p>
-  <img src="ativiteDiagramme.svg" alt="Diagramme UML d'activité : Reconnaissance des gestes">
+    <section>
+      <h2>Diagramme UML d'activité : Reconnaissance des gestes</h2>
+      <p>Le diagramme suivant détaille le flux de travail pour reconnaître un geste (ex. SCROLL_UP).</p>
+      <img src="ativiteDiagramme.svg" alt="Diagramme UML d'activité : Reconnaissance des gestes">
+    </section>
 
-  <h2>Diagramme de séquence : Reconnaissance des gestes</h2>
-  <p>Le diagramme suivant illustre le processus de reconnaissance d'un geste de défilement (SCROLL_UP).</p>
-  <img src="sequenceDiagramme.png" alt="Diagramme de séquence : Reconnaissance des gestes">
+    <section>
+      <h2>Diagramme de séquence : Reconnaissance des gestes</h2>
+      <p>Le diagramme suivant illustre le processus de reconnaissance d'un geste de défilement (SCROLL_UP).</p>
+      <img src="sequenceDiagramme.png" alt="Diagramme de séquence : Reconnaissance des gestes">
+    </section>
 
-  <h2>Architecture du projet</h2>
-  <p>Le projet est organisé en modules :</p>
-  <ul>
-    <li><b>interface</b> : Interface utilisateur (PyQt5).</li>
-    <li><b>core</b> : Traitement des gestes et contrôle du curseur.</li>
-    <li><b>utils</b> : Calibrage et lissage.</li>
-    <li><b>chatbot</b> : Assistance utilisateur via FAQ.</li>
-  </ul>
-</body>
-<script type="text/javascript">
-  var gk_isXlsx = false;
-  var gk_xlsxFileLookup = {};
-  var gk_fileData = {};
-  function filledCell(cell) {
-  return cell !== '' && cell != null;
-  }
-  function loadFileData(filename) {
-  if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
-    try {
-      var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
-      var firstSheetName = workbook.SheetNames[0];
-      var worksheet = workbook.Sheets[firstSheetName];
+    <section>
+      <h2>Architecture du projet</h2>
+      <p>Le projet est organisé en modules :</p>
+      <ul>
+        <li><b>interface</b> : Interface utilisateur (PyQt5).</li>
+        <li><b>core</b> : Traitement des gestes et contrôle du curseur.</li>
+        <li><b>utils</b> : Calibrage et lissage.</li>
+        <li><b>chatbot</b> : Assistance utilisateur via FAQ.</li>
+      </ul>
+    </section>
+  </main>
 
-      // Convert sheet to JSON to filter blank rows
-      var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
-      // Filter out blank rows (rows where all cells are empty, null, or undefined)
-      var filteredData = jsonData.filter(row => row.some(filledCell));
+  <footer>
+    <p>&copy; 2023 Gesture-Control Project. Tous droits réservés.</p>
+  </footer>
 
-      // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
-      var headerRowIndex = filteredData.findIndex((row, index) =>
-      row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
-      );
-      // Fallback
-      if (headerRowIndex === -1 || headerRowIndex > 25) {
-      headerRowIndex = 0;
-      }
+  <script type="text/javascript">
+    var gk_isXlsx = false;
+    var gk_xlsxFileLookup = {};
+    var gk_fileData = {};
 
-      // Convert filtered JSON back to CSV
-      var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
-      csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
-      return csv;
-    } catch (e) {
-      console.error(e);
-      return "";
+    function filledCell(cell) {
+      return cell !== '' && cell != null;
     }
-  }
-  return gk_fileData[filename] || "";
-  }
+
+    function loadFileData(filename) {
+      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+          var firstSheetName = workbook.SheetNames[0];
+          var worksheet = workbook.Sheets[firstSheetName];
+
+          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+          var filteredData = jsonData.filter(row => row.some(filledCell));
+
+          var headerRowIndex = filteredData.findIndex((row, index) =>
+            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+          );
+
+          if (headerRowIndex === -1 || headerRowIndex > 25) {
+            headerRowIndex = 0;
+          }
+
+          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
+          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+          return csv;
+        } catch (e) {
+          console.error(e);
+          return "";
+        }
+      }
+      return gk_fileData[filename] || "";
+    }
   </script>
+</body>
 </html>
